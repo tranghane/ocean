@@ -1,0 +1,247 @@
+/* social media */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+  position: absolute;
+  bottom: 0; /* Adjust as needed */
+  left: 50%;
+  z-index: 9;
+  color: #f10909;
+
+
+  transform: translateX(-50%);
+  
+  /* Add any other styling you need */
+}
+.social-icon {
+    color: #f10909;
+}
+ul.social-icons {
+    margin-top: 10px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    border-radius: 100%;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0);
+}
+.fa-facebook:hover {
+    /* background-color: black; */
+    transform: scale(1.5); /* Increase the size by 10% on hover */
+}
+.fa-twitter {
+    border-radius: 100%;
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0);
+}
+.fa-twitter:hover {
+    /* background-color: #00aced; */
+    transform: scale(1.5); /* Increase the size by 10% on hover */
+
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.fa-rss:hover {
+    /* background-color: #eb8231; */
+    transform: scale(1.5); /* Increase the size by 10% on hover */
+
+}
+.fa-instagram {
+    border-radius: 100%;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.fa-instagram:hover {
+    /* background: linear-gradient(75deg,#f98d4d, #fb6141, #c238a7);
+    transform: scale(1.5); /* Increase the size by 10% on hover */
+     
+    transform: scale(1.5); /* Increase the size by 10% on hover */
+
+}
+.fa-linkedin {
+    border-radius: 50%;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.fa-linkedin:hover {
+    /* background-color: #0073a4; */
+    transform: scale(1.5); /* Increase the size by 10% on hover */
+
+}
+.fa-github {
+    border-radius: 100%;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.fa-github:hover {
+    /* background-color: #5a32a3; */
+    transform: scale(1.5); /* Increase the size by 10% on hover */
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  position: absolute;
+}
+canvas {
+  float: right;
+}
+
+body {
+  background-color: #111;
+  overflow: hidden;
+}
+
+/* adding new stuff */
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+#blur {
+  height: 100%; 
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, #00F8FF, #D65DB1);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+  
+}
+
+body {
+  margin: 0; /* Remove default body margin */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  min-height: 100vh; /* Full viewport height */
+  height: 100vh;
+}
+#card-container {
+  display: flex;
+  justify-content: center; /* Center horizontally within card-container */
+  align-items: center; /* Center vertically within card-container */
+  width: 50%; /* Adjust as needed */
+}
+
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(2rem, 6.5vw, 10rem);
+  color: #C5FCEE;
+  white-space: nowrap;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  margin: 0rem;
+  position: absolute;
+  left: 0; /* Align to the left */
+  top: 50%;
+  z-index: 4;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 2%;
+}
+
+#root {
+  width: 150vw;
+}
+
+
