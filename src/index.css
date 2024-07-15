@@ -25,15 +25,9 @@ ul {
   bottom: 0; /* Adjust as needed */
   left: 50%;
   z-index: 9;
-  color: #f10909;
-
-
   transform: translateX(-50%);
   
   /* Add any other styling you need */
-}
-.social-icon {
-    color: #f10909;
 }
 ul.social-icons {
     margin-top: 10px;
@@ -142,7 +136,6 @@ ul.social-icons {
 .fa-github:hover {
     /* background-color: #5a32a3; */
     transform: scale(1.5); /* Increase the size by 10% on hover */
-
 }
 
 
