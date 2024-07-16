@@ -75,7 +75,6 @@ const getTrailerClass = type => {
 window.onmousemove = e => {
   const interactable = e.target.closest(".interactable"),
         interacting = interactable !== null;
-  
   const icon = document.getElementById("trailer-icon");
   
   animateTrailer(e, interacting);
@@ -84,10 +83,8 @@ window.onmousemove = e => {
   
   if(interacting) {
     icon.className = getTrailerClass(interactable.dataset.type);
-    document.documentElement.style.cursor = 'none';
-  } else {
-    document.documentElement.style.cursor = '';
-  }
+  } 
 }
+
 
 
