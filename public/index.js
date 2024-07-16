@@ -68,7 +68,7 @@ const getTrailerClass = type => {
     case "text":
       return "fa fa-heart";
     default:
-      return "fa fa-arrow-up"; 
+      return "fa fa-arrow-up-right-from-square"; 
   }
 }
 
