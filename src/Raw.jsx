@@ -10,7 +10,7 @@ export default function RawCard() {
   return (
     <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
       <Physics debug interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
-        <Band />
+        <Band/>
       </Physics>
     </Canvas>
   )
@@ -66,6 +66,7 @@ function Band() {
         <RigidBody position={[2, 0, 0]} ref={card} angularDamping={2} linearDamping={2} type={dragged ? 'kinematicPosition' : 'dynamic'} >
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <mesh
+              
             onPointerUp={(e) => (e.target.releasePointerCapture(e.pointerId), drag(false))}
             onPointerDown={(e) => (e.target.setPointerCapture(e.pointerId), drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation()))))}>
             <planeGeometry args={[0.8 * 2, 1.125 * 2]} />

@@ -2,23 +2,23 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
-p > a:hover{
-    color: #d9d9d9;
-    text-decoration:  underline;
+p > a:hover {
+  color: #d9d9d9;
+  text-decoration: underline;
 }
 
 ._12 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 ._14 {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 ul {
-    padding:0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 .footer-social-icons {
   position: absolute;
@@ -26,119 +26,109 @@ ul {
   left: 50%;
   z-index: 9;
   transform: translateX(-50%);
-  
+
   /* Add any other styling you need */
 }
 ul.social-icons {
-    margin-top: 10px;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  margin-top: 10px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
+  vertical-align: top;
+  display: inline;
+  height: 100px;
 }
 .social-icons a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .fa-facebook {
-    border-radius: 100%;
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
 }
 .fa-facebook:hover {
-    /* background-color: black; */
-    transform: scale(1.5); /* Increase the size by 10% on hover */
+  /* background-color: black; */
+  transform: scale(2); /* Increase the size by 10% on hover */
 }
 .fa-twitter {
-    border-radius: 100%;
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
 }
 .fa-twitter:hover {
-    /* background-color: #00aced; */
-    transform: scale(1.5); /* Increase the size by 10% on hover */
-
+  /* background-color: #00aced; */
+  transform: scale(2); /* Increase the size by 10% on hover */
 }
 .fa-rss {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, 0);
-
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
 }
 .fa-rss:hover {
-    /* background-color: #eb8231; */
-    transform: scale(1.5); /* Increase the size by 10% on hover */
-
+  /* background-color: #eb8231; */
+  transform: scale(2); /* Increase the size by 10% on hover */
 }
 .fa-instagram {
-    border-radius: 100%;
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, 0);
-
+  border-radius: 100%;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
 }
 .fa-instagram:hover {
-    /* background: linear-gradient(75deg,#f98d4d, #fb6141, #c238a7);
-    transform: scale(1.5); /* Increase the size by 10% on hover */
-     
+  /* background: linear-gradient(75deg,#f98d4d, #fb6141, #c238a7);
     transform: scale(1.5); /* Increase the size by 10% on hover */
 
+  transform: scale(2); /* Increase the size by 10% on hover */
 }
 .fa-linkedin {
-    border-radius: 50%;
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, 0);
-
+  border-radius: 50%;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
 }
 .fa-linkedin:hover {
-    /* background-color: #0073a4; */
-    transform: scale(1.5); /* Increase the size by 10% on hover */
-
+  /* background-color: #0073a4; */
+  transform: scale(2); /* Increase the size by 10% on hover */
 }
 .fa-github {
-    border-radius: 100%;
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: rgba(0, 0, 0, 0);
-
+  border-radius: 100%;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
 }
 .fa-github:hover {
-    /* background-color: #5a32a3; */
-    transform: scale(1.5); /* Increase the size by 10% on hover */
+  /* background-color: #5a32a3; */
+  transform: scale(2); /* Increase the size by 10% on hover */
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -168,17 +158,17 @@ body {
   from {
     rotate: 0deg;
   }
-  
+
   50% {
     scale: 1 1.5;
   }
-  
+
   to {
     rotate: 360deg;
   }
 }
 #blur {
-  height: 100%; 
+  height: 100%;
   width: 100%;
   position: absolute;
   z-index: 2;
@@ -194,10 +184,9 @@ body {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, #00F8FF, #D65DB1);
+  background: linear-gradient(to right, #00f8ff, #d65db1);
   animation: rotate 20s infinite;
   opacity: 0.8;
-  
 }
 
 body {
@@ -214,11 +203,10 @@ body {
   width: 50%; /* Adjust as needed */
 }
 
-
 h1 {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: clamp(2rem, 6.5vw, 10rem);
-  color: #C5FCEE;
+  color: #c5fcee;
   white-space: nowrap;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
@@ -237,4 +225,38 @@ h1 {
   width: 150vw;
 }
 
+body:hover > #trailer {
+  opacity: 1;
+}
 
+#trailer {
+  height: 20px;
+  width: 20px;
+  background-color: #c5fcee;
+  border-radius: 20px;
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10000;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+
+  display: grid;
+  place-items: center;
+}
+
+#trailer:not([data-type=""]) > #trailer-icon {
+  opacity: 1;
+  /* color: #f70707; */
+}
+#trailer-icon {
+  font-size: 6px;
+  line-height: 4px;
+
+  color: #fab184;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
