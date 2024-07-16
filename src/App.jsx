@@ -22,12 +22,12 @@ import { MeshLineGeometry, MeshLineMaterial } from "meshline";
 // import { useControls } from 'leva'
 
 extend({ MeshLineGeometry, MeshLineMaterial });
-useGLTF.preload(
-  "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb"
-);
-// useTexture.preload(
-//   "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg"
+// useGLTF.preload(
+//   "tag.glb"
 // );
+useGLTF.preload(
+  "final.glb"
+);
 useTexture.preload(
   "band.jpg"
 );
@@ -88,15 +88,19 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
     angularDamping: 2,
     linearDamping: 2,
   };
-  const { nodes, materials } = useGLTF(
-    "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb"
-  );
-  // const texture = useTexture(
-  //   "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg"
+  // const { nodes, materials } = useGLTF(
+  //   "tag.glb"
   // );
+
+
+  const { nodes, materials } = useGLTF(
+    "final.glb"
+  );
   const texture = useTexture(
     "band.jpg"
   );
+
+
   const { width, height } = useThree((state) => state.size);
   const [curve] = useState(
     () =>
