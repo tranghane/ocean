@@ -1,6 +1,8 @@
 /* social media */
 @import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css); */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -55,6 +57,20 @@ ul.social-icons {
   background-color: rgba(0, 0, 0, 0);
 }
 .fa-facebook:hover {
+  /* background-color: black; */
+  transform: scale(2); /* Increase the size by 10% on hover */
+}
+.fa-discord {
+  border-radius: 100%;
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
+}
+.fa-discord:hover {
   /* background-color: black; */
   transform: scale(2); /* Increase the size by 10% on hover */
 }
